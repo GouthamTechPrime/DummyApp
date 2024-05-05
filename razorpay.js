@@ -105,7 +105,7 @@ router.put("/getData",async(req,res)=>{
           orderNature : orderNature,
           customerId : customerId,
           mobileNumber : mobileNumber,
-          paymentStatus : paymentId,
+          paymentStatus : "sucessful",
           paymentId : paymentId
         });
         const savePayment = await payment.save();
@@ -137,7 +137,7 @@ router.put("/getData",async(req,res)=>{
           orderNature : orderNature,
           customerId : customerId,
           mobileNumber : mobileNumber,
-          paymentStatus : paymentId,
+          paymentStatus : "fail",
           paymentId : paymentId
         });
         const savePayment = await payment.save();
